@@ -1,10 +1,7 @@
-#FROM eclipse-temurin:11-jdk
-#WORKDIR /app
-#COPY target/bank-0.0.1-SNAPSHOT.jar app.jar
-#ENTRYPOINT ["java", "-jar", "app.jar"]
-
 #FROM amazoncorretto:11
-FROM openjdk:11-jre
+#FROM openjdk:11-jre
+#FROM eclipse-temurin:11.0.26_4-jdk-ubi9-minimal
+FROM liferay/jdk11
 WORKDIR /app
 COPY target/*.jar app.jar
 EXPOSE 8080

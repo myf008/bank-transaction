@@ -22,7 +22,8 @@
 
 ## 容器运行
 1. 克隆仓库后，执行 `mvn clean install` 构建项目。
-2. 运行 `docker-compose up` 启动容器化服务。
+2. 建议jdk基础镜像先本地下载好
+3. 运行 `docker-compose up` 启动容器化服务。
 或者：
 1. docker build -t app . 
 docker run -p 8080:8080 app
