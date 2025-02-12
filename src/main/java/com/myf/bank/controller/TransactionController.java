@@ -29,7 +29,7 @@ public class TransactionController {
         //userId一般从上下文中获取，此处模拟userI固定为1
         Long userId = 1L;
         Transaction transaction = Transaction.builder()
-                .statementId(UUID.randomUUID().toString())
+                .statementId(request.getStatementId())
                 .type(request.getType())
                 .amount(request.getAmount())
                 .timestamp(LocalDateTime.now())
